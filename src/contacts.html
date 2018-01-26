@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+//= includes/head.html
+
+<body>
+//= includes/header.html
+
+<main>
+  <section class="map_block">
+    <div class="marker_block">
+      <div class="maps" data-longitude="53.8932826" data-latitude="27.4891187"></div>
+    </div>
+    <div id="map" class="full_map"></div>
+    <div class="tabs_block company_contacts">
+      <ul class="tabs_caption">
+        <li class="tab active">Контакты</li>
+        <li class="tab">Обратная связь</li>
+      </ul>
+        <div class="tabs_content active">
+          <div class="contact_item address"><img src="img/icons/icon_location.png" alt="Адрес" class="icon">ул. Янки Мавра, 41, каб. 204</div>
+          <div class="contact_item"><a href="tel:+375291401010" class="phone"><img src="img/icons/icon_phone.png" alt="Телефон" class="icon">+375 (29) 140-10-10</a></div>
+          <div class="contact_item"><a href="tel:+375291401010" class="phone"><img src="img/icons/icon_phone.png" alt="Телефон" class="icon">+375 (29) 140-10-10</a></div>
+          <div class="contact_item"><a href="mailto:info@skyweb.by" class="mail"><img src="img/icons/icon_mail.png" alt="Почта" class="icon">info@skyweb.by</a></div>
+          <div class="contact_item mode">Режим работы: пн. - пт. с 9:00 - 18:00</div>
+        </div>
+        <div class="tabs_content">
+          <form action="/">
+            <div class="fields_block">
+              <div class="field"> 
+                <label for="name">Имя</label>
+                <input type="text" id="name" autocomplete="off">
+              </div>
+              <div class="field"> 
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" placeholder="+375 (__) ___-__-__">
+              </div>
+              <div class="field"> 
+                <label for="mail">Электронная почта</label>
+                <input type="email" id="mail">
+              </div>
+            </div>
+            <div class="field"> 
+              <label for="message">Вопрос</label>
+              <textarea name="" id="message"></textarea>
+            </div>
+              <button type="submit" class="btn">Отправить</button>
+          </form>
+        </div>
+    </div>
+  </section>
+</main>
+
+//= includes/footer.html
+//= includes/scripts.html
+</body>
+</html>

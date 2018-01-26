@@ -1,0 +1,12 @@
+@include font-face('Exo2-RegularCondensed', "../fonts/Exo2-RegularCondensed" ,null, null, ttf eot woff svg);
+@include font-face('Exo2-MediumCondensed', "../fonts/Exo2-MediumCondensed" ,null, null, ttf eot woff svg);
+@include font-face('Exo2-BoldCondensed', "../fonts/Exo2-BoldCondensed" ,null, null, ttf eot woff svg);
+@include font-face('Exo2-SemiBoldCondensed', "../fonts/Exo2-SemiBoldCondensed" ,null, null, ttf eot woff svg);
+@include font-face('Exo2-LightCondensed', "../fonts/Exo2-LightCondensed" ,null, null, ttf eot woff svg);
+@include font-face('Exo2-ExtraLightCondensed', "../fonts/Exo2-ExtraLightCondensed" ,null, null, ttf eot woff svg);
+@include font-face('Exo2-ThinCondensed', "../fonts/Exo2-ExtraLightCondensed" ,null, null, ttf eot woff svg);
+
+$blue: #20294e;
+$blueGray: #3c4467;
+
+$yellow: #ffcb36;
