@@ -18,9 +18,9 @@ $all_works-hover-offset-y: 0px
 $all_works-hover-width: 209px
 $all_works-hover-height: 209px
 $all_works-hover-total-width: 418px
-$all_works-hover-total-height: 246px
+$all_works-hover-total-height: 251px
 $all_works-hover-image: 'sprite.png'
-$all_works-hover: 0px 0px 0px 0px 209px 209px 418px 246px 'sprite.png' 'all_works-hover'
+$all_works-hover: 0px 0px 0px 0px 209px 209px 418px 251px 'sprite.png' 'all_works-hover'
 $all_works-name: 'all_works'
 $all_works-x: 209px
 $all_works-y: 0px
@@ -29,80 +29,124 @@ $all_works-offset-y: 0px
 $all_works-width: 209px
 $all_works-height: 209px
 $all_works-total-width: 418px
-$all_works-total-height: 246px
+$all_works-total-height: 251px
 $all_works-image: 'sprite.png'
-$all_works: 209px 0px -209px 0px 209px 209px 418px 246px 'sprite.png' 'all_works'
+$all_works: 209px 0px -209px 0px 209px 209px 418px 251px 'sprite.png' 'all_works'
 $icon_check-name: 'icon_check'
-$icon_check-x: 48px
-$icon_check-y: 209px
-$icon_check-offset-x: -48px
-$icon_check-offset-y: -209px
+$icon_check-x: 112px
+$icon_check-y: 214px
+$icon_check-offset-x: -112px
+$icon_check-offset-y: -214px
 $icon_check-width: 10px
 $icon_check-height: 7px
 $icon_check-total-width: 418px
-$icon_check-total-height: 246px
+$icon_check-total-height: 251px
 $icon_check-image: 'sprite.png'
-$icon_check: 48px 209px -48px -209px 10px 7px 418px 246px 'sprite.png' 'icon_check'
+$icon_check: 112px 214px -112px -214px 10px 7px 418px 251px 'sprite.png' 'icon_check'
+$icon_clock-name: 'icon_clock'
+$icon_clock-x: 68px
+$icon_clock-y: 214px
+$icon_clock-offset-x: -68px
+$icon_clock-offset-y: -214px
+$icon_clock-width: 20px
+$icon_clock-height: 20px
+$icon_clock-total-width: 418px
+$icon_clock-total-height: 251px
+$icon_clock-image: 'sprite.png'
+$icon_clock: 68px 214px -68px -214px 20px 20px 418px 251px 'sprite.png' 'icon_clock'
+$icon_dotted-name: 'icon_dotted'
+$icon_dotted-x: 0px
+$icon_dotted-y: 209px
+$icon_dotted-offset-x: 0px
+$icon_dotted-offset-y: -209px
+$icon_dotted-width: 212px
+$icon_dotted-height: 5px
+$icon_dotted-total-width: 418px
+$icon_dotted-total-height: 251px
+$icon_dotted-image: 'sprite.png'
+$icon_dotted: 0px 209px 0px -209px 212px 5px 418px 251px 'sprite.png' 'icon_dotted'
 $icon_location-name: 'icon_location'
 $icon_location-x: 0px
-$icon_location-y: 209px
+$icon_location-y: 214px
 $icon_location-offset-x: 0px
-$icon_location-offset-y: -209px
+$icon_location-offset-y: -214px
 $icon_location-width: 24px
 $icon_location-height: 37px
 $icon_location-total-width: 418px
-$icon_location-total-height: 246px
+$icon_location-total-height: 251px
 $icon_location-image: 'sprite.png'
-$icon_location: 0px 209px 0px -209px 24px 37px 418px 246px 'sprite.png' 'icon_location'
+$icon_location: 0px 214px 0px -214px 24px 37px 418px 251px 'sprite.png' 'icon_location'
 $icon_mail-name: 'icon_mail'
-$icon_mail-x: 36px
-$icon_mail-y: 209px
-$icon_mail-offset-x: -36px
-$icon_mail-offset-y: -209px
+$icon_mail-x: 100px
+$icon_mail-y: 214px
+$icon_mail-offset-x: -100px
+$icon_mail-offset-y: -214px
 $icon_mail-width: 12px
 $icon_mail-height: 10px
 $icon_mail-total-width: 418px
-$icon_mail-total-height: 246px
+$icon_mail-total-height: 251px
 $icon_mail-image: 'sprite.png'
-$icon_mail: 36px 209px -36px -209px 12px 10px 418px 246px 'sprite.png' 'icon_mail'
+$icon_mail: 100px 214px -100px -214px 12px 10px 418px 251px 'sprite.png' 'icon_mail'
+$icon_minus-name: 'icon_minus'
+$icon_minus-x: 46px
+$icon_minus-y: 214px
+$icon_minus-offset-x: -46px
+$icon_minus-offset-y: -214px
+$icon_minus-width: 22px
+$icon_minus-height: 22px
+$icon_minus-total-width: 418px
+$icon_minus-total-height: 251px
+$icon_minus-image: 'sprite.png'
+$icon_minus: 46px 214px -46px -214px 22px 22px 418px 251px 'sprite.png' 'icon_minus'
 $icon_phone-name: 'icon_phone'
-$icon_phone-x: 24px
-$icon_phone-y: 209px
-$icon_phone-offset-x: -24px
-$icon_phone-offset-y: -209px
+$icon_phone-x: 88px
+$icon_phone-y: 214px
+$icon_phone-offset-x: -88px
+$icon_phone-offset-y: -214px
 $icon_phone-width: 12px
 $icon_phone-height: 12px
 $icon_phone-total-width: 418px
-$icon_phone-total-height: 246px
+$icon_phone-total-height: 251px
 $icon_phone-image: 'sprite.png'
-$icon_phone: 24px 209px -24px -209px 12px 12px 418px 246px 'sprite.png' 'icon_phone'
+$icon_phone: 88px 214px -88px -214px 12px 12px 418px 251px 'sprite.png' 'icon_phone'
+$icon_plus-name: 'icon_plus'
+$icon_plus-x: 24px
+$icon_plus-y: 214px
+$icon_plus-offset-x: -24px
+$icon_plus-offset-y: -214px
+$icon_plus-width: 22px
+$icon_plus-height: 22px
+$icon_plus-total-width: 418px
+$icon_plus-total-height: 251px
+$icon_plus-image: 'sprite.png'
+$icon_plus: 24px 214px -24px -214px 22px 22px 418px 251px 'sprite.png' 'icon_plus'
 $icon_right-hover-name: 'icon_right-hover'
 $icon_right-hover-x: 24px
-$icon_right-hover-y: 221px
+$icon_right-hover-y: 236px
 $icon_right-hover-offset-x: -24px
-$icon_right-hover-offset-y: -221px
+$icon_right-hover-offset-y: -236px
 $icon_right-hover-width: 6px
 $icon_right-hover-height: 10px
 $icon_right-hover-total-width: 418px
-$icon_right-hover-total-height: 246px
+$icon_right-hover-total-height: 251px
 $icon_right-hover-image: 'sprite.png'
-$icon_right-hover: 24px 221px -24px -221px 6px 10px 418px 246px 'sprite.png' 'icon_right-hover'
+$icon_right-hover: 24px 236px -24px -236px 6px 10px 418px 251px 'sprite.png' 'icon_right-hover'
 $icon_right-name: 'icon_right'
 $icon_right-x: 30px
-$icon_right-y: 221px
+$icon_right-y: 236px
 $icon_right-offset-x: -30px
-$icon_right-offset-y: -221px
+$icon_right-offset-y: -236px
 $icon_right-width: 6px
 $icon_right-height: 10px
 $icon_right-total-width: 418px
-$icon_right-total-height: 246px
+$icon_right-total-height: 251px
 $icon_right-image: 'sprite.png'
-$icon_right: 30px 221px -30px -221px 6px 10px 418px 246px 'sprite.png' 'icon_right'
+$icon_right: 30px 236px -30px -236px 6px 10px 418px 251px 'sprite.png' 'icon_right'
 $spritesheet-width: 418px
-$spritesheet-height: 246px
+$spritesheet-height: 251px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $all_works-hover $all_works $icon_check $icon_location $icon_mail $icon_phone $icon_right-hover $icon_right
-$spritesheet: 418px 246px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $all_works-hover $all_works $icon_check $icon_clock $icon_dotted $icon_location $icon_mail $icon_minus $icon_phone $icon_plus $icon_right-hover $icon_right
+$spritesheet: 418px 251px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables

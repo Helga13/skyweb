@@ -189,6 +189,14 @@ $(document).ready(function () {
   
   'use strict'
   
+  // btn hover
+//  $('.btn').on('mouseenter', function(){
+//    $(this).find('span').css({'transform': 'translateX(0)'})
+//  });
+//  $('.btn').on('mouseleave', function(){
+//    $(this).find('span').css({'transform': 'translateX(100%)'})
+//  });
+  
   // dropdown menu
   $('.js-dropdown').on('click', function(e){
     e.preventDefault();

@@ -3,17 +3,562 @@
 //= includes/head.html
 
 <body>
-//= includes/header.html
+//= includes/header_main.html
 
 <main>
   <section class="heading">
     <div class="wrap">
       <ul class="breadcrumbs">
-        <li><a href="/"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="/">SkyWeb</a></li>
+        <li><a href="#">Разработка сайта</a></li>
+        <li>Разработка Landing page</li>
+      </ul>
+      <div class="heading_block">
+        <h1>Разработка Landing page</h1>
+        <div class="heading_row"><span class="key">Стоимость разработки:</span><span class="price_value">от 900 р.</span></div>
+        <div class="heading_row"><span class="key">Время разработки:</span>
+          <ul class="time">
+            <li class="mark"></li>
+            <li class="mark"></li>
+            <li class="mark"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <a href="#" class="btn"><span></span>Рассчитать стоимость</a>
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="wrap">
+      <div class="h2">Преимущества и недостатки Landing page</div>
+      <div class="row">
+        <div class="col">
+          <div class="h3">Преимущества Landing page</div>
+          <ul class="advantages_list">
+            <li>Простой и удобный дизайн</li>
+            <li>Быстрая загрузка</li>
+            <li>Повышение конверсии за счет узконаправленности</li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="h3">Недостатки Landing page</div>
+          <ul class="disadvantages_list">
+            <li>Не подходит для ситуации с наличием у компании большого количества товаров и/или услуг</li>
+          </ul>
+        </div>
+      </div>
+      <div class="h3">Что включает в себя разработка</div>
+      <p>Что такое лендинг пейдж (посадочная страница)? Это автономная интернет-страница, на которую потенциальный клиент попадает после клика по рекламному объявлению или в результате поиска. Лендинги достаточно широко используются в маркетинге в силу своего принципиального отличия от традиционного веб-сайта: если главная цель лендинга — совершение посетителем конкретного (целевого) действия, то веб-сайты имеют многоцелевой характер. Разарбтка включает следующие процессы:</p>
+      <ul class="simple_list">
+        <li>Разработка сайта</li>
+        <li>Базовае заполнение заполнение</li>
+        <li>Тестирование</li>
       </ul>
     </div>
-    
+  </section>
+  <section class="achievements">
+    <div class="wrap">
+      <div class="h2">Примеры индивидуальных проектов</div>
+    </div>
+    <div class="portfolio">
+      <div class="row">
+        <div class="col">
+          <a href="#" class="portfolio_item">
+            <img src="img/portfolio/serge.jpg" alt="">
+            <div class="hover_block">
+              <div class="inner">
+                <div class="desctiption">Каталог товаров газовой промышленности</div>
+                <div class="btn transparent">Узнать подробности</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="portfolio_item">
+            <img src="img/portfolio/radiofillz.jpg" alt="">
+            <div class="hover_block">
+              <div class="inner">
+                <div class="desctiption">Каталог товаров газовой промышленности</div>
+                <div class="btn transparent">Узнать подробности</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="portfolio_item">
+            <img src="img/portfolio/eurogroup.jpg" alt="">
+            <div class="hover_block">
+              <div class="inner">
+                <div class="desctiption">Каталог товаров газовой промышленности</div>
+                <div class="btn transparent">Узнать подробности</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testing_block">
+    <div class="wrap">
+      <div class="h1">Расчитайте бюджет на разработку сайта</div>
+      <form action="/">
+        <div class="step step1 site_view" style="display: inline-block;">
+          <div class="h2">Что вам необходимо?</div>
+          <div class="row">
+            <div class="col">
+              <div class="field">
+                <input type="radio" id="goods" name="step1" value="goods" checked="">
+                <label for="goods">
+                  <div class="title">Продать товары</div>
+                  <div>Интернет-магазин</div>
+                  <div>Сайт-каталог</div>
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="field">
+                <input type="radio" id="services" name="step1" value="services">
+                <label for="services">
+                  <div class="title">Рассказать об услугах</div>
+                  <div>Сайт-визитка</div>
+                  <div>Корпоративный сайт</div>
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="field">
+                <input type="radio" id="landing" name="step1" value="landing">
+                <label for="landing">
+                  <div class="title">Landing-page</div>
+                  <div>Одностраничный сайт</div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="talign"> 
+            <a href="#" class="btn dark js-next">Следующий вопрос</a>
+          </div>
+        </div>
+        <div class="step step2">
+          <div class="visible_step basket_step">
+            <div class="h2">Нужна ли Вам корзина?</div>
+            <div class="row">
+              <div class="col">
+                <div class="field">
+                  <input type="radio" id="basket_yes" name="step2" value="yes" checked="">
+                  <label for="basket_yes">Да</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="field">
+                  <input type="radio" id="basket_no" name="step2" value="no">
+                  <label for="basket_no">Нет</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="visible_step size_step">
+            <div class="h2">Какой предпочитаете размер сайта</div>
+            <div class="row">
+              <div class="col">
+                <div class="field">
+                  <input type="radio" id="small" name="step2" value="small" checked="">
+                  <label for="small">до 5 страниц</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="field">
+                  <input type="radio" id="middle" name="step2" value="middle">
+                  <label for="middle">от 5 до 15 страниц</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="field">
+                  <input type="radio" id="large" name="step2" value="large">
+                  <label for="large">больше 15 страниц</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="talign"> 
+            <a href="#" class="btn dark js-next">Следующий вопрос</a>
+          </div>
+        </div>
+        <div class="step step3 additional_functions">
+          <div class="visible_step for_goods">
+            <div class="h2">Какие дополнительные функции нужны?</div>
+            <div class="row">
+              <div class="col hidden">
+                <div class="field">
+                  <input type="checkbox" id="online_payment" name="step3" value="online_payment">
+                  <label for="online_payment">онлайн-оплата</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="field">
+                  <input type="checkbox" id="exel" name="step3" value="exel">
+                  <label for="exel">импорт/экспорт из exel</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="field">
+                  <input type="checkbox" id="synchronization" name="step3" value="synchronization">
+                  <label for="synchronization">синхронизация с 1с</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="field">
+                  <input type="checkbox" id="filters" name="step3" value="filters">
+                  <label for="filters">фильтры товаров</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="visible_step for_services">
+            <div class="h2">Какие функции нужны?</div>
+            <div class="row">
+              <div class="col">
+                <div class="field">
+                  <input type="checkbox" id="calculator" name="step3" value="calculator">
+                  <label for="calculator">калькулятор стоимости</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="field">
+                  <input type="checkbox" id="feedback" name="step3" value="feedback">
+                  <label for="feedback">обратная связь</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="field">
+                  <input type="checkbox" id="online" name="step3" value="online">
+                  <label for="online">онлайн запись</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="talign"> 
+            <a href="#" class="btn dark js-next">Следующий вопрос</a>
+          </div>
+        </div>
+        <div class="step step4 filling_step">
+          <div class="h2">Требуется ли заполнение?</div>
+          <div class="row">
+            <div class="col hidden">
+              <div class="field">
+                <input type="radio" id="without_base" name="step4" value="without_base">
+                <label for="without_base">у меня нет базы</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="field">
+                <input type="radio" id="partial_filling" name="step4" value="partial_filling" checked="">
+                <label for="partial_filling">есть база, нужно сделать первоначальное заполнение</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="field">
+                <input type="radio" id="full_filling" name="step4" value="full_filling">
+                <label for="full_filling">нужно полное заполнение</label>
+              </div>
+            </div>
+          </div>
+          <div class="talign"> 
+            <a href="#" class="btn dark js-next">Следующий вопрос</a>
+          </div>
+        </div>
+        <div class="step step5 preferred_design">
+          <div class="h2">Выберите предпочтительный дизайн</div>
+          <div class="row">
+            <div class="col">
+              <div class="field">
+                <input type="radio" id="special" name="step5" value="special" checked="">
+                <label for="special">
+                  <div class="solution_item">
+                    <div class="solution_inner">
+                      <img src="img/solutions/promo_site.jpg" alt="Индивидуальный дизайн">
+                      <div class="price">от 250 руб.</div>
+                    </div>
+                    <div class="caption">Индивидуальный дизайн</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <input type="radio" id="template" name="step5" value="template">
+                <label for="template">
+                  <div class="solution_item">
+                    <div class="solution_inner">
+                      <img src="img/solutions/internet_shop.jpg" alt="Готовое решение">
+                      <div class="price">от 250 руб.</div>
+                    </div>
+                    <div class="caption">Готовое решение</div>
+                  </div>
+                </label>
+            </div>
+          </div>
+          <div class="talign"> 
+            <a href="#" class="btn dark js-next">Рассчитать стоимость</a>
+          </div>
+          
+        </div>
+        <div class="step step6 form_fields">
+          <div class="h2">Мы готовы отправить вам расчет</div>
+            <div class="fields_block">
+              <div class="field"> 
+                <label for="name">Имя <span class="required">*</span></label>
+                <input type="text" id="name" autocomplete="off" required="">
+              </div>
+              <div class="field"> 
+                <label for="phone">Телефон <span class="required">*</span></label>
+                <input type="text" id="phone" placeholder="+375 (__) ___-__-__">
+              </div>
+              <div class="field"> 
+                <label for="mail">Электронная почта</label>
+                <input type="email" id="mail">
+              </div>
+            </div>
+            <div class="field full">
+              <label for="comment">Напишите свои идеи по поводу сайта</label>
+              <textarea name="comment" id="comment"></textarea>
+            </div>
+            <div class="talign"> 
+              <button type="submit" class="btn dark submit">Рассчитать стоимость</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="ready_solutions">
+    <div class="wrap">
+      <div class="h2">Готовые решения</div>
+    </div>
+    <div class="solutions">
+      <div class="row">
+        <div class="col">
+          <a href="#" class="solution_item">
+            <div class="solution_inner">
+              <img src="img/solutions/promo_site.jpg" alt="Сайт-визитка">
+              <div class="hover_block">
+                <div class="btn">Подробнее</div>
+              </div>
+              <div class="price">от 250 руб.</div>
+            </div>
+            <div class="caption">Сайт-визитка</div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="solution_item">
+            <div class="solution_inner">
+              <img src="img/solutions/internet_shop.jpg" alt="Интернет-магазин">
+              <div class="hover_block">
+                <div class="btn">Подробнее</div>
+              </div>
+              <div class="price">от 250 руб.</div>
+            </div>
+            <div class="caption">Интернет-магазин</div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="solution_item">
+            <div class="solution_inner">
+              <img src="img/solutions/catalog.jpg" alt="Каталог товаров">
+              <div class="hover_block">
+                <div class="btn">Подробнее</div>
+              </div>
+              <div class="price">от 250 руб.</div>
+            </div>
+            <div class="caption">Каталог товаров</div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="solution_item">
+            <div class="solution_inner">
+              <img src="img/solutions/landing.jpg" alt="Landing page">
+              <div class="hover_block">
+                <div class="btn">Подробнее</div>
+              </div>
+              <div class="price">от 250 руб.</div>
+            </div>
+            <div class="caption">Landing page</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stages">
+    <div class="wrap">
+      <h2>Этапы создания сайта</h2>
+      <div class="row">
+       <div class="col">
+          <div class="stage_item">
+            <div class="img_block">
+              <div class="num">1</div>
+              <img src="img/stages/step_tz.png" alt="Составление ТЗ">
+            </div>
+            <div class="caption">Составление подробного ТЗ</div>
+            <div class="text">Техническое задание содержит основные требования.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="stage_item">
+            <div class="img_block">
+              <div class="num">2</div>
+              <img src="img/stages/step_doc.png" alt="Оформление договора">
+            </div>
+            <div class="caption">Оформление договора</div>
+            <div class="text">Мы работаем честно и открыто. Открыто и честно мы работаем. Работаем мы.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="stage_item">
+            <div class="img_block">
+              <div class="num">3</div>
+              <img src="img/stages/step_tt.png" alt="Создание дизайн-макета">
+            </div>
+            <div class="caption">Создание дизайн&nbsp;-&nbsp;макета</div>
+            <div class="text">На данном шаге мы создаем графическое оформление сайта, выбираем цветовую гамму, и шрифт.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="stage_item">
+            <div class="img_block">
+              <div class="num">4</div>
+              <img src="img/stages/step_programming.png" alt="Верстка и программирование">
+            </div>
+            <div class="caption">Верстка и программирование</div>
+            <div class="text">Верстаем для популярных броузеров и адаптируем под различные устройства.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="stage_item">
+            <div class="img_block">
+              <div class="num">5</div>
+              <img src="img/stages/step_db.png" alt="Наполнение базы данных">
+            </div>
+            <div class="caption">Наполнение базы данных</div>
+            <div class="text">Техническое задание содержит основные требования.</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="stage_item">
+            <div class="img_block">
+              <div class="num">6</div>
+              <img src="img/stages/step_search.png" alt="Оставайтесь на высоте!">
+            </div>
+            <div class="caption">Оставайтесь на высоте!</div>
+            <div class="text">Мы предлагаем своевременную техническую поддержку и <a href="#" class="link">продвижение сайта</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="budget">
+    <div class="wrap">
+      <div class="h2">Спланируйте свой бюджет!</div>
+      <a href="#" class="btn">Рассчитать стоимость</a>
+    </div>
+  </section>
+  <section class="services">
+    <div class="wrap">
+      <div class="h2">Другие услуги</div>
+      <div class="row">
+        <div class="col">
+          <div class="service_item">
+            <div class="title">Сайт-визитка</div>
+            <div class="text_block">
+              <div><span class="key">Стоимость: </span><span class="price_value">от 700 р.</span></div>
+              <div class="dev_time"><span class="key">Время: </span>
+                <ul class="time">
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <p>Простой сайт для простых людей с простыми страницами по простой цене. Все очень просто...</p>
+              <a href="#" class="btn">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service_item">
+            <div class="title">Каталог товаров</div>
+            <div class="text_block">
+              <div><span class="key">Стоимость: </span><span class="price_value">от 1200 р.</span></div>
+              <div class="dev_time"><span class="key">Время: </span>
+                <ul class="time">
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                  <li></li>
+                </ul>
+              </div>
+              <p>Простой сайт для простых людей с простыми страницами по простой цене. Все очень просто...</p>
+              <a href="#" class="btn">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service_item">
+            <div class="title">Корпоративный сайт</div>
+            <div class="text_block">
+              <div><span class="key">Стоимость: </span><span class="price_value">от 900 р.</span></div>
+              <div class="dev_time"><span class="key">Время: </span>
+                <ul class="time">
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <p>Простой сайт для простых людей с простыми страницами по простой цене. Все очень просто...</p>
+              <a href="#" class="btn">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="service_item">
+            <div class="title">Интренет-магазин</div>
+            <div class="text_block">
+              <div><span class="key">Стоимость: </span><span class="price_value">от 2100 р.</span></div>
+              <div class="dev_time"><span class="key">Время: </span>
+                <ul class="time">
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                  <li class="mark"></li>
+                </ul>
+              </div>
+              <p>Простой сайт для простых людей с простыми страницами по простой цене. Все очень просто...</p>
+              <a href="#" class="btn">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="map_block">
+    <div class="marker_block">
+      <div class="maps" data-longitude="53.8932826" data-latitude="27.4891187"></div>
+    </div>
+    <div id="map"></div>
+    <div class="company_contacts">
+      <div class="h3">Начните прямо сейчас!</div>
+      <div class="contact_item address"><img src="img/icons/icon_location.png" alt="Адрес" class="icon">ул. Янки Мавра, 41, каб. 204</div>
+      <div class="contact_item"><a href="tel:+375291401010" class="phone"><img src="img/icons/icon_phone.png" alt="Телефон" class="icon">+375 (29) 140-10-10</a></div>
+      <div class="contact_item"><a href="tel:+375291401010" class="phone"><img src="img/icons/icon_phone.png" alt="Телефон" class="icon">+375 (29) 140-10-10</a></div>
+      <div class="contact_item"><a href="mailto:info@skyweb.by" class="mail"><img src="img/icons/icon_mail.png" alt="Почта" class="icon">info@skyweb.by</a></div>
+      <div class="contact_item mode">Режим работы: пн. - пт. с 9:00 - 18:00</div>
+      <div class="btn_block">
+        <a href="#" class="btn"><span class="btn_text">Заказать расчет</span></a>
+      </div>
+    </div>
   </section>
 </main>
 
