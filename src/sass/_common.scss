@@ -109,7 +109,8 @@ textarea {
 :-moz-placeholder           {color: $blueGray;}/* Firefox 18- */
 :-ms-input-placeholder      {color: $blueGray;}
 
-label {
+label,
+.label{
   display: block;
   margin-bottom: 6px;
   font-family: 'Exo2-LightCondensed', $font-stack-helvetica;
@@ -150,6 +151,7 @@ p {
   display: inline-block;
   vertical-align: top;
   @include font-size(1.8);
+	letter-spacing: 0.025em;
 }
 
 .btn {
@@ -517,7 +519,8 @@ main{
 }
 
 .principles{
-  padding-top: 100px;
+//  padding-top: 100px;
+  padding-top: 8%;
   .row{
     display: flex;
     flex-direction: row;
@@ -536,9 +539,9 @@ main{
     max-width: 100px;
   }
   .caption{
-    line-height: 37px;
+    line-height: 22px;
     letter-spacing: 0.025em;
-    padding-top: 10px;
+    padding-top: 17px;
   }
 }
 
@@ -625,6 +628,7 @@ main{
   }
   .price{
     position: absolute;
+		height: 26px;
     right: 0;
     bottom: 0;
     background-color: #fff;
@@ -663,6 +667,26 @@ main{
       background: $yellow url('../img/icons/icon_right-hover.png') right 19px center no-repeat;
     }
   }
+}
+
+.directions_seo{
+	.directions_item{
+		box-shadow: none;
+		border-bottom: 1px solid $blue;
+	}
+	.attr{
+		text-align: left;
+		padding: 10px 20px 14px;
+		color: #555;
+		line-height: 36px;
+	}
+	.key{
+		opacity: .7;
+	}
+	.value{
+		float: right;
+		font-family: 'Exo2-MediumCondensed', $font-stack-helvetica;
+	}
 }
 
 .stages{
@@ -1001,7 +1025,8 @@ main{
   .form_fields{
     width: 100%;
     max-width: 680px;
-    label{
+    label,
+		.label{
       text-align: left;
       color: #777;
       font-family: 'Exo2-RegularCondensed', $font-stack-helvetica;
@@ -1017,6 +1042,16 @@ main{
         border-color: $yellow;
       }
     }
+		&.regions{
+			text-align: left;
+			input[type=radio]+label, 
+			input[type=checkbox]+label{
+				min-width: auto;
+			}
+			.fields_block .field{
+				width: 50%;
+			}
+		}
   }
   .visible_step{
     display: none;
