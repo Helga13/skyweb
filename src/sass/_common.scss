@@ -151,7 +151,6 @@ p {
   display: inline-block;
   vertical-align: top;
   @include font-size(1.8);
-	letter-spacing: 0.025em;
 }
 
 .btn {
@@ -519,8 +518,7 @@ main{
 }
 
 .principles{
-//  padding-top: 100px;
-  padding-top: 8%;
+  padding-top: 100px;
   .row{
     display: flex;
     flex-direction: row;
@@ -625,6 +623,22 @@ main{
       background: url('../img/directions/app_bg.png') center no-repeat;
       background-size: cover;
     }
+    &.redesign{
+      background: url('../img/design/redisign_bg.png') center no-repeat;
+      background-size: cover;
+    }
+    &.ui_app{
+      background: url('../img/design/ui_app_bg.png') center no-repeat;
+      background-size: cover;
+    }
+    &.logo{
+      background: url('../img/design/logo_bg.png') center no-repeat;
+      background-size: cover;
+    }
+    &.style{
+      background: url('../img/design/style_bg.png') center no-repeat;
+      background-size: cover;
+    }
   }
   .price{
     position: absolute;
@@ -669,24 +683,21 @@ main{
   }
 }
 
-.directions_seo{
-	.directions_item{
-		box-shadow: none;
-		border-bottom: 1px solid $blue;
-	}
-	.attr{
-		text-align: left;
-		padding: 10px 20px 14px;
-		color: #555;
-		line-height: 36px;
-	}
-	.key{
-		opacity: .7;
-	}
-	.value{
-		float: right;
-		font-family: 'Exo2-MediumCondensed', $font-stack-helvetica;
-	}
+.directions_seo {
+  .attr {
+    text-align: left;
+    padding: 12px 20px 16px;
+    color: #555;
+    line-height: 36px;
+    letter-spacing: 0.025em;
+  }
+  .key {
+    opacity: .7;
+  }
+  .value {
+    float: right;
+    font-family: 'Exo2-MediumCondensed', $font-stack-helvetica;
+  }
 }
 
 .stages{
@@ -890,9 +901,10 @@ main{
   .field{
     position: relative;
   }
-  .h2,
-	h2{
+  .h3,
+	h3{
     padding-bottom: 30px;
+    text-align: center;
   }
   .talign{
     text-align: right;
@@ -1520,7 +1532,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+//    justify-content: center;
     align-items: stretch;
   }
   .col {
@@ -1535,10 +1547,11 @@ main{
 }
 
 .function_item {
-//  padding: 10px;
+  padding: 0 10px;
   height: 100%;
   .img {
-    width: 116px;
+//    width: 116px;
+    width: 174px;
     margin: 0 auto 43px;
   }
   img {
@@ -1625,6 +1638,7 @@ main{
     color: #555;
     img {
       width: auto;
+      box-shadow: none;
     }
     .search {
       width: 80px;
@@ -1644,5 +1658,46 @@ main{
     &:not(:first-child) {
       text-align: center;
     }
+  }
+}
+
+.directions_top{
+  padding-top: 16px;
+  .additional{
+    padding-top: 26px;
+  }
+}
+
+.context{
+  background-color: $blue;
+  color: #fff;
+  padding: 80px 0 126px;
+  .tabs_caption{
+    text-align: center;
+    padding-top: 50px;
+  }
+  .tab{
+    width: auto;
+    padding: 10px 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #a6a9b8;
+    border: none;
+    &.active{
+      background-color: #fff;
+    }
+  }
+  .col{
+    width: 50%;
+  }
+  p{
+    color: #fff;
+  }
+  .title{
+    font-family: 'Exo2-MediumCondensed', $font-stack-helvetica;
+    @include font-size(2.2);
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    padding-bottom: 8px;
   }
 }
