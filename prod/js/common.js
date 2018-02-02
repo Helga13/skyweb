@@ -265,4 +265,17 @@ $(document).ready(function () {
       
 	}
   
+  var wrap = $("#wrap");
+
+  $(function(){
+    $(window).scroll(function() {
+      var top = $(document).scrollTop();
+      if (top > 213){
+        $('.fixed_block').addClass('fixed');
+      }else{
+        $('.fixed_block').removeClass('fixed');
+      } 
+    });
+  });
+  
 })
