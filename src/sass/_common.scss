@@ -1702,13 +1702,58 @@ main{
   }
 }
 
+.back{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 15px;
+  right: 25px;
+  z-index: 1;
+  outline: none;
+  transition: transform .3s ease;
+  a{
+    padding: 14px;
+    display: inline-block;
+  }
+  img{
+    width: 100%;
+  }
+  &:hover,
+  &:focus,
+  &:active{
+    transform: scale(1.1);
+  }
+}
+
 .portfolio_header{
-  padding: 50px 100px 84px;
   background-color: $blue;
+  position: relative;
+  line-height: 0;
+  height: 214px;
+  overflow: hidden;
+  .inner{
+    padding: 40px 100px 54px;
+    position: relative;
+    display: table;
+  }
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
   h1,
   .h1{
     text-align: left;
     color: #fff;
+    height: 120px;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -1727,6 +1772,15 @@ main{
   }
 }
 
+.sticky {
+  position: fixed;
+  z-index: 10;
+}
+.stop {
+  position: relative;
+  z-index: 10;
+}
+
 .portfolio_right{
   display: table-cell;
   vertical-align: top;
@@ -1741,11 +1795,5 @@ main{
   .fixed{
     position: fixed;
     top: 0;
-  }
-  &.serge{
-    background-color: #1c0e1f;
-  }
-  &.royalzoo{
-    background-color: #002835;
   }
 }
