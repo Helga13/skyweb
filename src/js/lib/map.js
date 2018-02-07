@@ -113,7 +113,7 @@ if (document.getElementById('map')) {
 	function initMap() {
 		var myOptions = {
 			zoom: 14
-			, center: new google.maps.LatLng(53.8934059, 27.5088711)
+			, center: new google.maps.LatLng(53.8940825, 27.4971016)
 //			, disableDefaultUI: true
 			, scrollwheel: false
 			, mapTypeControl: false

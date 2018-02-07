@@ -24,21 +24,38 @@
       </div>
     </div>
     <nav>
-     <div class="wrap">
-<!--      <a href="/" class="logo"><img src="img/logo.png" alt="SkyWeb"></a>-->
-      <ul class="main_nav">
-        <li><a href="#">Разработка сайтов</a></li>
-        <li><a href="#">Продвижение</a></li>
-        <li><a href="#">Контекстная реклама</a></li>
-        <li><a href="#">Дизайн</a></li>
-        <li><a href="#" class="dropdown js-dropdown">О компании</a>
-        <ul class="submenu">
-          <li><a href="#">История</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        </li>
-      </ul>
+      <div class="wrap">
+       <div class="burger js-burger">
+          <div class="burger_inner">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </div>
+        <div class="nav_wrap">
+          <div class="nav_close js-nav_close"><a href="#"><img src="img/icons/icon_close-nav.png" alt="Закрыть"></a></div>
+          <div class="nav_wrap_inner">
+            <ul class="main_nav">
+              <li><a href="#">Разработка сайтов</a></li>
+              <li><a href="#">Продвижение</a></li>
+              <li><a href="#">Контекстная реклама</a></li>
+              <li><a href="#">Дизайн</a></li>
+              <li><a href="#" class="dropdown js-dropdown">О компании</a>
+              <ul class="submenu">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              </li>
+            </ul>
+            <div class="contacts_nav">
+              <a href="tel:+375291701040" class="phone">+375 (29) 170-10-40</a>
+              <a href="tel:+375291701040" class="phone">+375 (29) 170-10-40</a>
+              <a href="mailto:info@skyweb.by" class="mail"><img src="img/icons/icon_mail.png" alt="Почта" class="icon_mail">info@skyweb.by</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav_overlay js-nav_overlay"></div>
       </div>
     </nav>
   </div>
@@ -85,38 +102,48 @@
   </section>
   <section class="main_functions">
     <div class="wrap">
-     <div class="h3">Зачем нужно продвигать свой сайт</div>
-      <p>Что такое лендинг пейдж (посадочная страница)? Это автономная интернет-страница, на которую потенциальный клиент попадает после клика по рекламному объявлению или в результате поиска. Лендинги достаточно широко используются в маркетинге в силу своего принципиального отличия от традиционного веб-сайта: если главная цель лендинга — совершение посетителем конкретного (целевого) действия, то веб-сайты имеют многоцелевой характер. Разарбтка включает следующие процессы:</p>
       <div class="h2">Основные этапы проведения рекламной кампании</div>
-      <div class="row">
+      <div class="row phase">
         <div class="col">
-          <div class="function_item">
-            <div class="img"><img src="img/commercical/strategy.png" alt="Сотавление стратегии"></div>
-            <div class="title">Сотавление стратегии</div>
-            <p>Определяемся с целевой аудиторией, регионом продвижджения и целями рекламной компании</p>
-          </div>
+          <div class="h4">Дизайн</div>
+          <ul class="simple_list">
+            <li>Адаптивный дизайн</li>
+            <li>Разработка индивидуального стиля</li>
+            <li>Прототипирование страниц</li>
+            <li>Уникальные иллюстрации и иконки</li>
+          </ul>
         </div>
         <div class="col">
-          <div class="function_item">
-            <div class="img"><img src="img/commercical/forecasting.png" alt="Прогнозирование"></div>
-            <div class="title">Прогнозирование и утверждение месячного бюджета</div>
-            <p>Определяем уровень конкурентности составленых запросов, и вычисляем оптимальный бюджет</p>
-          </div>
+          <div class="h4">Каталог</div>
+          <ul class="simple_list">
+            <li>Удобный поиск по каталогу</li>
+            <li>Фильтры товаров / сортировка</li>
+            <li>Добавление в таблицу сравнения</li>
+            <li>Покупка в один клик / корзина</li>
+          </ul>
         </div>
         <div class="col">
-          <div class="function_item">
-            <div class="img"><img src="img/commercical/testing.png" alt="Запуск и тестирование"></div>
-            <div class="title">Запуск и тестирование</div>
-            <p>Запуск кампании занимает от 1-го до 2-ух дней. После чего начинается этап тестирования выработанной стратегии</p>
-          </div>
+          <div class="h4">Карточка товара</div>
+          <ul class="simple_list">
+            <li>Фотографии товара</li>
+            <li>Описание товара, характеристики</li>
+            <li>Наличие, доставка, оплата, отзывы</li>
+            <li>Блок с рекомендуемыми товарами</li>
+          </ul>
         </div>
         <div class="col">
-          <div class="function_item">
-            <div class="img"><img src="img/commercical/efficiency.png" alt="Увеличение эффективности"></div>
-            <div class="title">Увеличение эффективности</div>
-            <p>На протяжении всей кампании отслеживаем и анализируем результаты. Полученная информация помогает выгодно скоректировать стратегию</p>
-          </div>
+          <div class="h4">Дополнительные функции</div>
+          <ul class="simple_list">
+            <li>Оплата банковской картой</li>
+            <li>Импорт/Экспорт из exel</li>
+            <li>Синхронизация с 1C</li>
+            <li>Онлайн-консультант</li>
+          </ul>
         </div>
+      </div>
+      <div class="descr">
+        <div class="h3">Зачем нужно продвигать свой сайт</div>
+        <p>Что такое лендинг пейдж (посадочная страница)? Это автономная интернет-страница, на которую потенциальный клиент попадает после клика по рекламному объявлению или в результате поиска. Лендинги достаточно широко используются в маркетинге в силу своего принципиального отличия от традиционного веб-сайта: если главная цель лендинга — совершение посетителем конкретного (целевого) действия, то веб-сайты имеют многоцелевой характер. Разарбтка включает следующие процессы:</p>
       </div>
     </div>
   </section>
@@ -519,7 +546,7 @@
   </section>
   <section class="map_block">
     <div class="marker_block">
-      <div class="maps" data-longitude="53.8932826" data-latitude="27.4891187"></div>
+      <div class="maps" data-longitude="53.893060" data-latitude="27.491387"></div>
     </div>
     <div id="map"></div>
     <div class="company_contacts">
@@ -530,7 +557,7 @@
       <div class="contact_item"><a href="mailto:info@skyweb.by" class="mail"><img src="img/icons/icon_mail.png" alt="Почта" class="icon">info@skyweb.by</a></div>
       <div class="contact_item mode">Режим работы: пн. - пт. с 9:00 - 18:00</div>
       <div class="btn_block">
-        <a href="#" class="btn">Заказать расчет</a>
+        <a href="#" class="btn">Связаться с нами</a>
       </div>
     </div>
   </section>

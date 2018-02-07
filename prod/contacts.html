@@ -24,21 +24,38 @@
       </div>
     </div>
     <nav>
-     <div class="wrap">
-<!--      <a href="" class="logo"><img src="img/logo.png" alt=""></a>-->
-      <ul class="main_nav">
-        <li><a href="#">Разработка сайтов</a></li>
-        <li><a href="#">Продвижение</a></li>
-        <li><a href="#">Контекстная реклама</a></li>
-        <li><a href="#">Дизайн</a></li>
-        <li><a href="#" class="dropdown js-dropdown">О компании</a>
-        <ul class="submenu">
-          <li><a href="#">История</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        </li>
-      </ul>
+      <div class="wrap">
+       <div class="burger js-burger">
+          <div class="burger_inner">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </div>
+        <div class="nav_wrap">
+          <div class="nav_close js-nav_close"><a href="#"><img src="img/icons/icon_close-nav.png" alt="Закрыть"></a></div>
+          <div class="nav_wrap_inner">
+            <ul class="main_nav">
+              <li><a href="#">Разработка сайтов</a></li>
+              <li><a href="#">Продвижение</a></li>
+              <li><a href="#">Контекстная реклама</a></li>
+              <li><a href="#">Дизайн</a></li>
+              <li><a href="#" class="dropdown js-dropdown">О компании</a>
+              <ul class="submenu">
+                <li><a href="#">История</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              </li>
+            </ul>
+            <div class="contacts_nav">
+              <a href="tel:+375291701040" class="phone">+375 (29) 170-10-40</a>
+              <a href="tel:+375291701040" class="phone">+375 (29) 170-10-40</a>
+              <a href="mailto:info@skyweb.by" class="mail"><img src="img/icons/icon_mail.png" alt="Почта" class="icon_mail">info@skyweb.by</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav_overlay js-nav_overlay"></div>
       </div>
     </nav>
   </div>
@@ -47,7 +64,7 @@
 <main>
   <section class="map_block">
     <div class="marker_block">
-      <div class="maps" data-longitude="53.8932826" data-latitude="27.4891187"></div>
+      <div class="maps" data-longitude="53.893060" data-latitude="27.491387"></div>
     </div>
     <div id="map" class="full_map"></div>
     <div class="tabs_block company_contacts">

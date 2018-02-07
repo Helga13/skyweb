@@ -78,10 +78,35 @@ $(document).ready(function () {
       
 	}
   
+  $('.js-show_more').on('click', function(){
+    $(this).parents('.row').next('.add_context').slideToggle();
+  });
+  
+  $('.js-burger').on('click', function(){
+    $(this).next('.nav_wrap').addClass('is-show');
+    $('body').css({'overflow': 'hidden'}); 
+//    $('.nav_wrap_inner').perfectScrollbar();
+  });
+  
+  $('.js-nav_close').on('click', function(){
+    $(this).parent('.nav_wrap').removeClass('is-show');
+    $('body').css({'overflow': 'auto'});
+//    $('.nav_wrap_inner').perfectScrollbar('destroy');
+  });
+  
+  $('.js-nav_overlay').on('click', function(){
+    $(this).prev('.nav_wrap').removeClass('is-show');
+    $('body').css({'overflow': 'auto'});
+//    $('.nav_wrap_inner').perfectScrollbar('destroy');
+  });
+  
+  
   
 });
 
-if(document.querySelector('.fixed_block')){
+
+
+if(document.querySelector('.js-fixed_block')){
   (function(){
     var a = document.querySelector('.fixed_block'), b = null, P = 0; 
     window.addEventListener('scroll', Ascroll, false);
