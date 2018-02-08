@@ -13,7 +13,7 @@
   }
   
   .main_nav>li a{
-    padding: 0 16px;
+    padding: 0 14px;
   }
   
   main .wrap{
@@ -41,6 +41,28 @@
     padding-right: 10px;
     @include font-size(3.0);
     line-height: 38px;
+  }
+  
+  .map_block.full_map{
+    min-height: auto;
+    height: auto;
+    .company_contacts{
+      position: static;
+      width: 100%;
+      min-width: 100%;
+      background-color: $blue;
+      min-height: 567px;
+    }
+    .tabs_caption,
+    .tabs_content{
+      padding: 0 10px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 767px;
+    }
+    #map{
+      height: 400px;
+    }
   }
 
 }
@@ -137,8 +159,8 @@
       display: block;
       visibility: visible;
       position: absolute;
-      right: -40px;
-      top: 25px;
+      right: -10vh;
+      top: 5vh;
       width: 30px;
       height: 30px;
       img{
@@ -159,17 +181,6 @@
 }
 
 @media only screen and (max-width : 992px) {
-  
-  .slogan{
-    min-height: 660px;
-    .wrap{
-      padding: 140px 0 63px;
-    }
-  }
-  
-  .principles{
-    padding-top: 10px;
-  }
   
   main .wrap{
     max-width: 767px;
@@ -253,10 +264,48 @@
     display: none;
     visibility: hidden;
   }
+  
+  .portfolio_header{
+    height: auto;
+    .h1,
+    h1{
+      height: auto;
+    }
+  } 
+  
+  .portfolio_left,
+  .portfolio_right{
+    display: block;
+    width: 100%;
+  }
 
 }
 
 @media only screen and (max-width : 767px) {
+  
+  h1,
+  .h1{
+    @include font-size(4.0);
+    line-height: 50px;
+  }
+
+  h2,
+  .h2{
+    @include font-size(3.0);
+    line-height: 40px;
+  }
+
+  h3,
+  .h3{
+    @include font-size(2.6);
+    line-height: 28px;
+  }
+
+  h4,
+  .h4 {
+    @include font-size(2.2);
+    line-height: 24px;
+  }
   
   .nav_wrap{
     width: 50%;
@@ -295,7 +344,18 @@
   }
   
   .slogan{
-    min-height: 730px;
+    min-height: 740px;
+    .wrap{
+      padding: 150px 0 63px;
+    }
+    h1,
+    .h1{
+      padding: 0 10px;
+    }
+  }
+  
+  .principles{
+    padding-top: 10px;
   }
   
   .seo_tabs .col{
@@ -303,6 +363,12 @@
     &:last-child{
       padding-top: 30px;
     }
+  }
+  
+  .function_item .img{
+    width: 140px;
+    height: 140px;
+    margin-bottom: 24px;
   }
   
   .company_contacts{
@@ -315,10 +381,373 @@
   #map{
     height: 380px;
   }
+  
+  .testing_block .show_more, 
+  .testing_block input[type=checkbox]+label, 
+  .testing_block input[type=radio]+label{
+    padding: 10px;
+    line-height: 26px;
+  }
+  .testing_block .step1 .field{
+    height: 186px;
+    display: table;
+    input[type=radio]+label{
+      padding-top: 14px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .directions .additional .img{
+    width: 100%;
+    padding: 0 10px 10px;
+    img{
+      width: auto;
+      max-width: 100%;
+    }
+  }
+  .directions .additional .text{
+    width: 100%;
+  }
+  
+  .logo_block{
+    width: 40%;
+    text-align: center;
+  }
+  .portfolio, 
+  .solutions{
+    padding: 50px 10px 0;
+    @include font-size(2.6);
+    line-height: 28px;
+  }
+  .footer_top{
+    overflow: hidden;
+    .logo{
+      margin-right: 0;
+    }
+  } 
+  .footer_menu{
+    float: right;
+    padding: 4px 0;
+    li{
+      margin-left: 30px;
+    }
+  }
+  
+  .preferred_design{
+    .solution_inner{
+      display: none;
+    }
+  }
+  .solution_item .caption{
+    padding: 20px;
+  }
+  .testing_block .field{
+    margin-bottom: 18px;
+  }
+  
+  .portfolio_header .inner{
+    padding-left: 50px;
+    padding-right: 80px;
+  }
+  
+  .full_map .company_contacts{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+@media only screen and (max-width : 600px) {
+  
+  .row{
+    margin: 0 -5px;
+  }
+
+  .col{
+    padding: 0 5px;
+  }
+  
+  .contacts_header{
+    height: 16px;
+    .phone{
+      display: none;
+      visibility: hidden;
+    }
+  } 
+  
+  .logo_block{
+    height: 70px;
+    padding: 11px;
+    &:after{
+      border-bottom-width: 70px;
+      border-left-width: 42px;
+      right: -42px;
+    }
+  }
+  
+  .nav_wrap{
+    width: 56%;
+    left: calc(-56% - 20vh);
+    & + .nav_overlay{
+      width: 44%;
+      right: calc(-44% - 20vh);
+    }
+  }
+  
+  .portfolio .portfolio_item{
+    min-height: auto;
+  }
+  
+  .portfolio .hover_block{
+    display: none;
+  }
+  .portfolio .portfolio_item.all .hover_block{
+    display: flex;
+  }
+  
+  .portfolio .portfolio_item.all .desctiption{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+  
+  .directions .directions_item .btn,
+  .service_item .btn{
+    width: 180px;
+  }
+  .directions .main ul{
+    display: none;
+  }
+  .directions .additional .col,
+  .directions .main .col,
+  .services .col,
+  .solutions .col,
+  .portfolio .col{
+    min-width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .portfolio .all_works{
+    @include font-size(2.2);
+    line-height: 24px;
+  }
+  .portfolio .portfolio_item.all .desctiption{
+    width: 90px;
+    height: 90px;
+  }
+  
+  .achievements{
+    padding: 50px 0;
+  }
+  .portfolio, 
+  .solutions{
+    padding: 30px 10px 0;
+  }
+  
+  .solution_inner .price{
+    width: 110px;
+    padding-top: 7px;
+    &:before{
+      border-bottom-width: 26px;
+    }
+  }
+  
+  .testing_block{
+    height: 760px;
+    .step{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .fields_block .field{
+      padding: 0 5px;
+    }
+    .fields_block{
+      margin: 0 -5px;
+    }
+    .form_fields input, 
+    .form_fields textarea{
+      padding: 8px;
+    }
+  }
+  .footer_top{
+    .logo img{
+      width: 130px;
+    }
+  }
+  .footer_menu{
+    padding: 2px 0;
+    li{
+      margin-left: 20px;
+    }
+  }
+  .customers{
+    padding-bottom: 0;
+    .col{
+      width: 25%;
+    }
+  }
+  .service_item .title{
+    @include font-size(2.0);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .service_item .text_block{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .budget .heading_block .key{
+    width: 270px;
+    &::after{
+      left: 280px;
+    }
+  }
+  .seo_tabs .tab{
+    margin: 5px;
+    padding: 10px;
+  }
+  .map_block.full_map .tabs_caption, 
+  .map_block.full_map .tabs_content{
+    padding: 0;
+  }
+  .company_contacts .fields_block{
+    margin: 0 -5px;
+    .field{
+      padding: 0 5px;
+    }
+  }
+  .portfolio_right .fixed_block{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .portfolio_header .inner{
+    padding-left: 10px;
+  }
+
 
 }
 
 @media only screen and (max-width : 480px) {
+  
+  .footer_top{
+    text-align: center;
+  }
+  .footer_menu{
+    padding: 14px 0 0;
+    float: none;
+    width: 100%;
+    li{
+      margin: 10px;
+    }
+  }
+  .customers{
+    .col{
+      width: 33.333%;
+    }
+  }
+  .testing_block{
+    min-height: 760px;
+    height: auto;
+  }
+  .testing_block .step1 .col{
+    width: 100%;
+    .field{
+      height: auto;
+    }
+  }
+  .testing_block .fields_block{
+    text-align: left;
+    .field{
+      width: 100%;
+      input{
+        max-width: 320px;
+      }
+    }
+  } 
+  .testing_block .form_fields.regions .fields_block .field{
+    width: 100%;
+  }
+  .back{
+    width: 40px;
+    height: 40px;
+    a{
+      padding: 10px;
+    }
+  }
+  .map_block.full_map .company_contacts{
+    min-height: auto;
+  }
+  .company_contacts .fields_block .field{
+    width: 100%;
+    input{
+      max-width: 320px;
+    }
+  }
+  .nav_wrap{
+    width: 70%;
+    left: calc(-70% - 20vh);
+    & + .nav_overlay{
+      width: 30%;
+      right: calc(-30% - 20vh);
+    }
+  }
+  .principles .col{
+    width: 50%;
+  }
+  .slogan {
+    min-height: 940px;
+    .wrap{
+      padding-top: 110px;
+    }
+    .buttons_block{
+      padding: 70px 0 60px;
+    }
+  }
+  .directions .main .col, 
+  .services .col,
+  .directions .additional .col, 
+  .directions .main .col, 
+  .portfolio .col,  
+  .solutions .col{
+    width: 100%;
+  }
+  .directions .additional .title{
+    padding-bottom: 10px;
+  }
+  .company_contacts{
+    min-width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .stages .col,
+  .main_functions .col{
+    width: 100%;
+  }
+  .directions .additional .directions_item{
+    padding: 20px 0;
+  }
+  .heading_block .key{
+    width: auto;
+  }
+  .heading_block .price_value{
+    @include font-size(2.8);
+    line-height: 40px;
+  }
+  .main_functions .cms .col{
+    width: 100%;
+  }
+  .seo_tabs thead .search{
+    width: 70px;
+  }
+  .seo_tabs th,
+  .seo_tabs td{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .map_block.full_map .tabs_caption{
+    display: flex;
+  }
 
 }
 

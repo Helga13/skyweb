@@ -20,6 +20,11 @@ body {
   font-smoothing: antialiased;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;   
 }
 
 h1,
@@ -59,12 +64,12 @@ h3,
 }
 
 h4,
-.h4{
-	font-family: 'Exo2-MediumCondensed', $font-stack-helvetica;
-	@include font-size(2.4);
-	line-height: 26px;
-	letter-spacing: 0.025em;
-	text-align: left;
+.h4 {
+  font-family: 'Exo2-MediumCondensed', $font-stack-helvetica;
+  @include font-size(2.4);
+  line-height: 26px;
+  letter-spacing: 0.025em;
+  text-align: left;
 }
 
 a {
@@ -107,7 +112,7 @@ textarea {
 ::-webkit-input-placeholder {color: rgba(255,255,255,.5);}
 ::-moz-placeholder          {color: rgba(255,255,255,.5);}/* Firefox 19+ */
 :-moz-placeholder           {color: rgba(255,255,255,.5);}/* Firefox 18- */
-:-ms-input-placeholder      {color: rgba(255,255,255,.5);}
+:-ms-input-placeholder      {color: rgba(255,255,255,.5);} 
 
 label,
 .label{
@@ -303,6 +308,7 @@ header{
   position: relative;
   height: 80px;
   width: 27.92%;
+  min-width: 180px;
   float: left;
   background-color: $blue;
   text-align: right;
@@ -537,6 +543,9 @@ nav{
 
 main{
   min-height: calc(100vh - 131px);
+  &.full{
+    min-height: calc(100vh - 185px);
+  }
 }
 
 .slogan{
@@ -915,6 +924,7 @@ main{
       .desctiption{
         width: 180px;
         height: 180px;
+        margin: 0 auto;
         transform: translateY(0);
         background: url('../img/icons/all_works.png') center no-repeat;
         background-size: contain;
@@ -1341,15 +1351,18 @@ main{
   & > div{
     background-color: $blue!important;
   }
-  &.full_map{
-    min-height: 560px;
-    height: calc(100vh - 185px);
-    margin-bottom: -54px;
-  }
 }
 .map_block{
   position: relative;
+  &.full_map{
+    min-height: 560px;
+    height: calc(100vh - 185px);
+    #map{
+      height: 100%;
+    }
+  }
 }
+
 .company_contacts{
   position: absolute;
   top: 0;
@@ -1392,10 +1405,11 @@ main{
   }
 }
 .full_map{
-  & + .company_contacts{
+  .company_contacts{
     width: 40%;
     padding: 70px 50px;
-    min-width: 660px;
+    min-width: 630px;
+    z-index: 1;
   }
 }
 .company_contacts{
@@ -1666,6 +1680,9 @@ main{
         left: 390px;
       }
     }
+    .price_value{
+      line-height: 42px;
+    }
   }
 }
 
@@ -1684,7 +1701,6 @@ main{
   }
   .col {
     width: 25%;
-//    min-width: 273px;
     padding-bottom: 20px;
   }
   .descr{
@@ -1839,7 +1855,7 @@ main{
   height: 50px;
   border-radius: 50%;
   background-color: #fff;
-  top: 15px;
+  top: 20px;
   right: 25px;
   z-index: 11;
   outline: none;
@@ -1891,6 +1907,7 @@ main{
 .portfolio_content{
   background-color: $blue;
   display: table;
+  overflow: hidden;
 }
 
 .portfolio_left{
