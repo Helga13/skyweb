@@ -69,7 +69,7 @@
         <li><a href="#">Разработка сайта</a></li>
         <li>Разработка Landing page</li>
       </ul>
-			<h1>Разработка Landing page</h1>
+      <h1>Разработка Landing page</h1>
       <div class="heading_block">
         <div class="heading_row"><span class="key">Стоимость разработки:</span><span class="price_value">от 900 р.</span></div>
         <div class="heading_row"><span class="key">Время разработки:</span>
@@ -81,7 +81,7 @@
             <li></li>
           </ul>
         </div>
-        <a href="#" class="btn"><span></span>Рассчитать стоимость</a>
+        <a href="#" data-href='#calculating' class="btn js-scrollto">Сделать рассчет</a>
       </div>
     </div>
   </section>
@@ -156,7 +156,7 @@
     </div>
     <div class="wrap"><a href="#" class="btn see_all">Смотреть все работы</a></div>
   </section>
-  <section class="testing_block">
+  <section class="testing_block" id="calculating">
     <div class="wrap">
       <div class="h2">Расчитайте бюджет на разработку сайта</div>
       <form action="/">
@@ -495,7 +495,7 @@
   <section class="budget">
     <div class="wrap">
       <div class="h2">Спланируйте свой бюджет!</div>
-      <a href="#" class="btn">Рассчитать стоимость</a>
+      <a href="#" data-href='#calculating' class="btn js-scrollto">Рассчитать стоимость</a>
     </div>
   </section>
   <section class="services">
@@ -594,7 +594,7 @@
       <div class="contact_item"><a href="mailto:info@skyweb.by" class="mail"><img src="img/icons/icon_mail.png" alt="Почта" class="icon">info@skyweb.by</a></div>
       <div class="contact_item mode">Режим работы: пн. - пт. с 9:00 - 18:00</div>
       <div class="btn_block">
-        <a href="#" class="btn">Связаться с нами</a>
+        <a href="#" class="btn js-popup">Связаться с нами</a>
       </div>
     </div>
   </section>
@@ -622,6 +622,29 @@
     </div>
   </div>
 </footer>
+<div class="popup_overlay" id="feedback_form">
+  <div class="popup_content">
+    <a href="#" class="popup_close"><img src="img/icons/icon_close-nav.png" alt="Закрыть"></a>
+    <form action="/">
+      <div class="fields_block">
+        <div class="field">
+          <label for="name">Имя</label>
+          <input type="text" id="name" autocomplete="off"> </div>
+        <div class="field">
+          <label for="phone">Телефон</label>
+          <input type="text" id="phone" placeholder="+375 (__) ___-__-__"> </div>
+        <div class="field">
+          <label for="mail">Электронная почта</label>
+          <input type="email" id="mail"> </div>
+      </div>
+      <div class="field">
+        <label for="message">Вопрос</label>
+        <textarea name="" id="message"></textarea>
+      </div>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </div>
+</div>
 <script src="js/common.js"></script>
 </body>
 </html>

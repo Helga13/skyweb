@@ -11,8 +11,8 @@
     <div class="wrap">
       <h1>Создаем интернет каждый день</h1>
       <div class="buttons_block">
-        <a href="#" class="btn transparent">Задать вопрос</a>
-        <a href="#" class="btn ">Сделать рассчет</a>
+        <a href="#" class="btn transparent js-popup">Задать вопрос</a>
+        <a href="#" data-href='#calculating' class="btn js-scrollto">Сделать рассчет</a>
       </div>
       <div class="principles">
         <div class="row">
@@ -370,7 +370,7 @@
       </div>
     </div>
   </section>
-    <section class="directions directions_seo">
+  <section class="directions directions_seo">
     <div class="wrap">
       <div class="h2">Эффективное продвижение без переплат</div>
       <div class="row main">
@@ -421,7 +421,7 @@
       </div>
     </div>
   </section>
-  <section class="testing_block">
+  <section class="testing_block" id="calculating">
     <div class="wrap">
       <div class="h2">Получите расчет бюджета на почту</div>
       <form action="/">
@@ -501,13 +501,14 @@
       <div class="contact_item"><a href="mailto:info@skyweb.by" class="mail"><img src="img/icons/icon_mail.png" alt="Почта" class="icon">info@skyweb.by</a></div>
       <div class="contact_item mode">Режим работы: пн. - пт. с 9:00 - 18:00</div>
       <div class="btn_block">
-        <a href="#" class="btn">Связаться с нами</a>
+        <a href="#" class="btn js-popup">Связаться с нами</a>
       </div>
     </div>
   </section>
 </main>
 
 //= includes/footer.html
+//= includes/popup.html
 //= includes/scripts.html
 </body>
 </html>

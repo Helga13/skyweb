@@ -13,7 +13,7 @@
         <li><a href="#">Разработка сайта</a></li>
         <li>Разработка Landing page</li>
       </ul>
-			<h1>Разработка Landing page</h1>
+      <h1>Разработка Landing page</h1>
       <div class="heading_block">
         <div class="heading_row"><span class="key">Стоимость разработки:</span><span class="price_value">от 900 р.</span></div>
         <div class="heading_row"><span class="key">Время разработки:</span>
@@ -25,7 +25,7 @@
             <li></li>
           </ul>
         </div>
-        <a href="#" class="btn"><span></span>Рассчитать стоимость</a>
+        <a href="#" data-href='#calculating' class="btn js-scrollto">Сделать рассчет</a>
       </div>
     </div>
   </section>
@@ -100,7 +100,7 @@
     </div>
     <div class="wrap"><a href="#" class="btn see_all">Смотреть все работы</a></div>
   </section>
-  <section class="testing_block">
+  <section class="testing_block" id="calculating">
     <div class="wrap">
       <div class="h2">Расчитайте бюджет на разработку сайта</div>
       <form action="/">
@@ -439,7 +439,7 @@
   <section class="budget">
     <div class="wrap">
       <div class="h2">Спланируйте свой бюджет!</div>
-      <a href="#" class="btn">Рассчитать стоимость</a>
+      <a href="#" data-href='#calculating' class="btn js-scrollto">Рассчитать стоимость</a>
     </div>
   </section>
   <section class="services">
@@ -538,13 +538,14 @@
       <div class="contact_item"><a href="mailto:info@skyweb.by" class="mail"><img src="img/icons/icon_mail.png" alt="Почта" class="icon">info@skyweb.by</a></div>
       <div class="contact_item mode">Режим работы: пн. - пт. с 9:00 - 18:00</div>
       <div class="btn_block">
-        <a href="#" class="btn">Связаться с нами</a>
+        <a href="#" class="btn js-popup">Связаться с нами</a>
       </div>
     </div>
   </section>
 </main>
 
 //= includes/footer.html
+//= includes/popup.html
 //= includes/scripts.html
 </body>
 </html>

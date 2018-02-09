@@ -120,10 +120,11 @@
     .nav_wrap_inner{
       overflow: hidden;
       position: relative;
-      padding: 60px 10px 60px 50px;
+      padding: 60px 0;
       height: 100%;
     }
     .main_nav{
+      padding: 0 10px 0 50px;
       display: block;
       font-family: 'Exo2-MediumCondensed', $font-stack-helvetica;
       @include font-size(2.4);
@@ -339,9 +340,14 @@
       margin-right: 4px;
     }
   }
-  .nav_wrap.is-show .nav_wrap_inner{
-    padding: 14px 10px 40px 50px;
-  }
+  .nav_wrap.is-show{
+    .nav_wrap_inner{
+      padding: 14px 0 40px 0;
+    }
+    .contacts_nav{
+      padding: 20px 10px 10px 50px;
+    }
+  }  
   
   .slogan{
     min-height: 740px;
@@ -374,7 +380,7 @@
   .company_contacts{
     position: static;
     width: 100%;
-    background-color: rgba(32,41,78,1);
+    background-color: rgba(32, 41, 78, .9);
     padding: 50px;
   }
   
@@ -453,6 +459,21 @@
   .full_map .company_contacts{
     padding-left: 10px;
     padding-right: 10px;
+  }
+  
+  .popup_overlay .popup_content{
+    padding-left: 20px;
+    padding-right: 20px;
+    &:before,
+    &:after{
+      display: none;
+    }
+  }
+  .popup_overlay .popup_close{
+    right: 20px;
+  }
+  .map_block.full_map .company_contacts{
+    min-height: auto;
   }
 
 }
@@ -675,9 +696,6 @@
       padding: 10px;
     }
   }
-  .map_block.full_map .company_contacts{
-    min-height: auto;
-  }
   .company_contacts .fields_block .field{
     width: 100%;
     input{
@@ -748,9 +766,6 @@
   .map_block.full_map .tabs_caption{
     display: flex;
   }
-
-}
-
-@media only screen and (max-width : 320px) {
+  
 
 }

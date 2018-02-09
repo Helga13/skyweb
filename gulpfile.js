@@ -5,7 +5,6 @@ var gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
-    spritesmith  = require('gulp.spritesmith'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
     cssmin = require('gulp-minify-css'),
@@ -28,7 +27,8 @@ var path = {
     },
     src: {
         html: 'src/*.html',
-        js: 'src/js/**/*.js',
+//        js: 'src/js/**/*.js',
+        js: 'src/js/common.js',
         css: 'src/css/*.*',
         sass: 'src/sass/screen.scss',
         img: 'src/img/**/*.*',
@@ -100,31 +100,10 @@ gulp.task('sass:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('sprite:build', function() {
-    var spriteData = 
-        gulp.src(path.src.icons)
-            .pipe(spritesmith({
-                imgName: 'sprite.png',
-                cssName: '_sprite.scss',
-                cssFormat: 'scss',
-                algorithm: 'binary-tree',
-                cssTemplate: 'scss.template.mustache',
-                cssVarMap: function(sprite) {
-                    sprite.name = sprite.name
-                }
-            }));
-
-    spriteData.img.pipe(gulp.dest('prod/img/'));
-    spriteData.css.pipe(gulp.dest('./src/sass/lib/')); 
-});
-
 gulp.task('image:build', function () {
     gulp.src(path.src.img) 
          .pipe(imagemin({
              progressive: true,
-        //     svgoPlugins: [{removeViewBox: false}],
-        //     use: [pngquant()],
-        //     interlaced: true
          }))
         .pipe(gulp.dest(path.build.img));
         // .pipe(reload({stream: true}));
@@ -144,7 +123,6 @@ gulp.task('build', [
     'html:build',
     'js:build',
     'sass:build',
-    'sprite:build',
     'fonts:build',
     'image:build',
     'svg:build'

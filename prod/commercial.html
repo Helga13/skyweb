@@ -67,8 +67,8 @@
     <div class="wrap">
       <h1>Создаем интернет каждый день</h1>
       <div class="buttons_block">
-        <a href="#" class="btn transparent">Задать вопрос</a>
-        <a href="#" class="btn">Сделать рассчет</a>
+        <a href="#" class="btn transparent js-popup">Задать вопрос</a>
+        <a href="#" data-href='#calculating' class="btn js-scrollto">Сделать рассчет</a>
       </div>
       <div class="principles">
         <div class="row">
@@ -143,7 +143,7 @@
       </div>
     </div>
   </section>
-    <section class="directions directions_top">
+  <section class="directions directions_top">
     <div class="wrap">
       <h2>Инструменты в битве за ТОП</h2>
       <div class="row additional">
@@ -411,7 +411,7 @@
       </div>
     </div>
   </section>
-  <section class="testing_block">
+  <section class="testing_block" id="calculating">
     <div class="wrap">
       <div class="h2">Узнайте сколько новых заказов вам принесет реклама</div>
       <form action="/">
@@ -533,7 +533,7 @@
       <div class="contact_item"><a href="mailto:info@skyweb.by" class="mail"><img src="img/icons/icon_mail.png" alt="Почта" class="icon">info@skyweb.by</a></div>
       <div class="contact_item mode">Режим работы: пн. - пт. с 9:00 - 18:00</div>
       <div class="btn_block">
-        <a href="#" class="btn">Связаться с нами</a>
+        <a href="#" class="btn js-popup">Связаться с нами</a>
       </div>
     </div>
   </section>
@@ -561,6 +561,29 @@
     </div>
   </div>
 </footer>
+<div class="popup_overlay" id="feedback_form">
+  <div class="popup_content">
+    <a href="#" class="popup_close"><img src="img/icons/icon_close-nav.png" alt="Закрыть"></a>
+    <form action="/">
+      <div class="fields_block">
+        <div class="field">
+          <label for="name">Имя</label>
+          <input type="text" id="name" autocomplete="off"> </div>
+        <div class="field">
+          <label for="phone">Телефон</label>
+          <input type="text" id="phone" placeholder="+375 (__) ___-__-__"> </div>
+        <div class="field">
+          <label for="mail">Электронная почта</label>
+          <input type="email" id="mail"> </div>
+      </div>
+      <div class="field">
+        <label for="message">Вопрос</label>
+        <textarea name="" id="message"></textarea>
+      </div>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </div>
+</div>
 <script src="js/common.js"></script>
 </body>
 </html>
