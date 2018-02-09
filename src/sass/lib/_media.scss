@@ -80,7 +80,8 @@
     width: 40%;
     background-color: $blue;
     z-index: 999;
-    left: calc(-40% - 20vh);
+//    left: calc(-40% - 20vh);
+    left: -100%;
     transition: left .3s ease;
     &:before{
       content: '';
@@ -100,7 +101,8 @@
       background-color: $blueGray;
       opacity: .8;
       z-index: 998;
-      right: calc(-60% - 20vh);
+//      right: calc(-60% - 20vh);
+      right: -100%;
       transition: right .3s ease;
       &:before{
         content: '';
@@ -310,10 +312,12 @@
   
   .nav_wrap{
     width: 50%;
-    left: calc(-50% - 20vh);
+//    left: calc(-50% - 20vh);
+    left: -100%;
     & + .nav_overlay{
       width: 50%;
-      right: calc(-50% - 20vh);
+//      right: calc(-50% - 20vh);
+      right: -100%;
     }
   }
   
@@ -508,10 +512,12 @@
   
   .nav_wrap{
     width: 56%;
-    left: calc(-56% - 20vh);
+//    left: calc(-56% - 20vh);
+    left: -100%;
     & + .nav_overlay{
       width: 44%;
-      right: calc(-44% - 20vh);
+//      right: calc(-44% - 20vh);
+      right: -100%;
     }
   }
   
@@ -704,10 +710,12 @@
   }
   .nav_wrap{
     width: 70%;
-    left: calc(-70% - 20vh);
+//    left: calc(-70% - 20vh);
+    left: -100%;
     & + .nav_overlay{
       width: 30%;
-      right: calc(-30% - 20vh);
+//      right: calc(-30% - 20vh);
+      right: -100%;
     }
   }
   .principles .col{
